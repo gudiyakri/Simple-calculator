@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="viewport" content="width=device-width, intial-scale=1">
+    <title>Calculator</title>
+    <style>
+ *{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+.container {
+  width: 340px;
+  height: 360px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left:450px;
+  margin-top:50px;
+  background-color: #485461;
+  text-align:center;
+}
+.result {
+  margin-bottom: 10px;
+  padding: 0 10px;
+  background-color: #4357692d;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+.equal-button {
+    width:30px;
+  background-color: rgb(243, 61, 29);
+}
+
+.equal-button:hover {
+  background-color: rgb(228, 39, 15);
+}
+.clear-button {
+    width:30px;
+  background-color: rgb(182, 29, 243);
+}
+
+.clear-button:hover {
+  background-color: rgb(90, 15, 228);
+}
+@media(max-width: 576px) {
+  .container {
+    width: 340px;
+  height: 360px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left:450px;
+  margin-top:50px;
+  background-color: #485461;
+  text-align:center;
+  }
+}
+        </style>
+  </head>
+  <body>
+<div class="container">
+    <h1>Calculator</h1>
+    <form action="/" method="post" target="result">
+      <input type="text" name="n1" placeholder="First Number" required><br><br>
+      <input type="text" name="n2" placeholder="Second Number" required><br><br>
+     <input type="text" name="option" placeholder="+ - / % * "><br><br>
+      <button type="submit" name="submit" class="equal-button">=</button>
+      <input type="reset" value="AC" class="clear-button"><br><br>
+    </form>
+    <iframe  name="result" src="" width="313" class="result" height="50">
+    </iframe>
+    
+    </div>
+  </body>
+</html>
